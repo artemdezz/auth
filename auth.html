@@ -65,8 +65,8 @@
 <script>
     function sendMessage() {
         var obj = {
-            login: document.getElementById('login_field').value,
-            password: document.getElementById('password_field').value
+            UserName: document.getElementById('login_field').value,
+            UserPassword: document.getElementById('password_field').value
         };
         var result = JSON.stringify(obj);
         Telegram.WebApp.sendData(result);
